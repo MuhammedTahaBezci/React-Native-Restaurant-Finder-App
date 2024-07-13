@@ -7,6 +7,6 @@ export default axios.create({
     baseURL:'https://api.yelp.com/v3/businesses/',
     // Varsayılan başlıkları tanımla (Define default headers)
     headers:{
-        Authorization:'Bearer POMfRvpeKp0HairTUA1iQxGkL2Clgk6kRwKvqoJsPu_oaqTal9EtkaF5UlmjYYZo9UG2_FA4XpcSTrxXDHXL7y4WE7UZ1jzHoXFLMkb03dnmIwWImgUF7XhnAcSNZnYx'
+        Authorization:'Bearer *********************************
     }
 })
