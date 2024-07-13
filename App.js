@@ -1,41 +1,47 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SearchScreen from './restaurant/screens/SearchScreen';
 import ResultShowScreen from './restaurant/screens/ResultShowScreen';
 
 const Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
     <NavigationContainer>
       {/* Ana Navigasyon Yığını Oluştur (Create Main Navigation Stack) */}
       <Stack.Navigator
-        screenOptions={{ headerTitle: (props) => (
-          <View style={styles.headerContainer}>
-            <Text style={styles.headerTitle}>
-              <Text style={styles.getirText}> Getir </Text>
-              <Text style={styles.sepetiText}> Sepeti </Text>
-            </Text>
-          </View>
-        ) }}>
+        screenOptions={{
+          headerTitle: (props) => (
+            <View style={styles.headerContainer}>
+              <Text style={styles.headerTitle}>
+                <Text style={styles.getirText}> Getir </Text>
+                <Text style={styles.sepetiText}> Sepeti </Text>
+              </Text>
+            </View>
+          ),
+        }}
+      >
         {/* Arama Ekranı (Search Screen) */}
-        <Stack.Screen name="search screen" 
-        component={SearchScreen} 
+        <Stack.Screen
+          name="search screen"
+          component={SearchScreen}
         />
-        <Stack.Screen name="ResultShowScreen" 
-        component={ResultShowScreen} 
+        <Stack.Screen
+          name="ResultShowScreen"
+          component={ResultShowScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   headerContainer: {
     padding: 5,
     backgroundColor: '#660099',
-    borderRadius: 10
+    borderRadius: 10,
   },
   headerTitle: {
     flexDirection: 'row',
@@ -59,4 +65,4 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 3, // Sağ üst köşeyi hafif yuvarlama
     borderBottomRightRadius: 3, // Sağ alt köşeyi hafif yuvarlama
   },
-})
+});
