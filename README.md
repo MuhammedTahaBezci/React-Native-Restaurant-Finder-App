@@ -87,4 +87,7 @@ Getir Sepeti, İstanbul'daki restoranları arayabileceğiniz ve detaylarını g�
 
 ## Proje Açıklaması
 
-    Getir Sepeti, kullanıcıların İstanbul'daki restoranları kolayca bulmalarını sağlayan bir mobil uygulamadır. Uygulama, kullanıcılara restoranların fiyat aralıklarına göre filtrelenmiş listelerini sunar. Kullanıcılar, bir restoranı seçtiklerinde, restoran hakkında daha fazla bilgiye ulaşabilirler. Bu proje, React Native ve Expo kullanılarak geliştirilmiş olup, Yelp API'den restoran verilerini çekmektedir. Proje, bileşen tabanlı mimariyi benimseyerek, kullanıcı arayüzünü modüler ve yeniden kullanılabilir hale getirmektedir.
+Getir Sepeti, kullanıcıların İstanbul'daki restoranları kolayca bulmalarını sağlayan bir mobil uygulamadır. 
+Uygulama, kullanıcılara restoranların fiyat aralıklarına göre filtrelenmiş listelerini sunar. Kullanıcılar, bir restoranı seçtiklerinde, 
+restoran hakkında daha fazla bilgiye ulaşabilirler. Bu proje, React Native ve Expo kullanılarak geliştirilmiş olup, Yelp API'den restoran verilerini çekmektedir. 
+Proje, bileşen tabanlı mimariyi benimseyerek, kullanıcı arayüzünü modüler ve yeniden kullanılabilir hale getirmektedir.
